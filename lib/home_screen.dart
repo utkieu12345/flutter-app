@@ -59,7 +59,7 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   @override
- Widget build(BuildContext context) {
+Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Dữ Liệu Sản Phẩm"),
@@ -133,7 +133,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                     onPressed: () {
                                       _deleteSanpham(sanpham.id);
                                     },
-                                    icon: const Icon(Icons.delete, color: Colors.red),
+                                    icon: const Icon(Icons.delete, color: Colors.red), // Màu đỏ cho nút xóa
                                   ),
                                   IconButton(
                                     onPressed: () {
@@ -143,7 +143,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                           sanpham['Loai'],
                                           sanpham['Gia'].toString());
                                     },
-                                    icon: const Icon(Icons.edit, color: Colors.blue),
+                                    icon: const Icon(Icons.edit, color: Color(0xFF4CAF50)), // Màu xanh lá cây cho nút chỉnh sửa
                                   ),
                                 ],
                               ),
@@ -160,5 +160,5 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
       ),
     );
- }
+  }
 }

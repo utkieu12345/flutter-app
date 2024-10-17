@@ -14,20 +14,20 @@ class MyApp extends StatelessWidget {
 
   // This widget is the root of your application.
   @override
- Widget build(BuildContext context) {
+Widget build(BuildContext context) {
     return MaterialApp(
       title: "Midterm Project",
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
-        scaffoldBackgroundColor: const Color(0xFFF5F5F5),
+        primarySwatch: Colors.green, // Thay đổi màu chính của ứng dụng
+        scaffoldBackgroundColor: const Color(0xFFF0F8FF), // Màu nền nhẹ
         appBarTheme: const AppBarTheme(
-          color: Colors.blue, 
-          titleTextStyle: TextStyle(color: Colors.white, fontSize: 20), 
+          color: Color(0xFF4CAF50), // Màu xanh lá cây cho AppBar
+          titleTextStyle: TextStyle(color: Colors.white, fontSize: 20), // Màu chữ trắng
         ),
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(
-            backgroundColor: Colors.blue,
+            backgroundColor: Color(0xFF4CAF50), // Màu nút
             foregroundColor: Colors.white,
             padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
             textStyle: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
@@ -37,10 +37,10 @@ class MyApp extends StatelessWidget {
           border: OutlineInputBorder(),
           focusedBorder: OutlineInputBorder(
             borderSide: BorderSide(
-              color: Colors.blue,
+              color: Color(0xFF4CAF50), // Màu đường viền khi focus
             ),
           ),
-          labelStyle: TextStyle(color: Colors.blue, fontSize: 16),
+          labelStyle: TextStyle(color: Color(0xFF4CAF50), fontSize: 16), // Màu chữ label
         ),
       ),
       home: const HomeScreen(),
